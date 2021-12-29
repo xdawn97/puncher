@@ -1,0 +1,58 @@
+puncher :
+    - bin :
+          - descript   : Project entries.
+          - debug.py   : Entry for running project in development.
+          - startup.py : Entry for a release version.
+    - contrib :
+          - descript : 3rd pary scripts.
+    - data :
+          - descript         : Persistant data will be stored here.
+          - aud              : Audio files.
+          - img              : Image files.
+          - stun_servers.yml : Public free STUN hosts and their ports.
+    - db :
+          - descript : In-Mem database interfaces.
+    - doc :
+        - descript : Manuals for the project.
+    - file :
+        - descript : Local file i/o interface.
+        - parser :
+            - descript : To parse viaries file types to generic data types.
+                - txt
+    - log :
+        - descript : To collect and rotate logs.
+    - net :
+        - descript : Network interfaces.
+        - auth : Acess control interface.
+        - ddns : Dynamic domain name interface.
+        - detects :
+            - descript : Sense the working environment.
+        - monitor :
+            - descript : System running status.
+        - obscure :
+            - descript : To confuse net traffic with general network activities.
+        - relay :
+            - descript : When p2p punch failed. Turns to a relay node.
+        - resolv :
+            - descript : Name resolve interface.
+        - session :
+            - descript : The facility that holds the communication between peers.
+        - tunnel :
+            - descript : Establish channels between peers.
+        - update :
+            - descript : Allow system to refresh latest environment status.
+    - reinforce :
+        - descript : To enforce code in file and memory.
+        - crypt : Encryption althrigthms.
+    - test :
+        - descript : Test cases.
+    - tmp :
+        - descript : Temporary debug files for developer.
+    - ui :
+        - descript : User interface.
+        - cmd : Commandline interface. Enable framework to run as a service.
+        - GUI : User interface that is more human friendly.
+    - __init__.py : Initialization when imported.
+    - cnsts.py : Global const table.
+    - configure.yml : Global configuration file. The priority is lower than command line options.
+    - errors.py : Global error module.
