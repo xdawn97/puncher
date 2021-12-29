@@ -46,7 +46,7 @@ puncher :
         - crypt : Encryption althrigthms.
     - test :
         - descript : Test cases.
-    - tmp :
+    - dev :
         - descript : Temporary debug files for developer.
     - ui :
         - descript : User interface.

@@ -1,6 +1,14 @@
 # Built-in Global Consts Table
-VERSION = "0.0.0a"
-DATABASE = "yaml"
-CONFIG = "yaml"
-PROXY_STACKS = ["Socks5", "tor"]
-CONFIG_FILE_LIST = ["stun_servers"]
+import datetime
+
+DATE_DEFAULT_FORMAT = "%Y-%m-%d %H:%M:%S"
+
+LOG_DEFAULT_LEVEL = "DEBUG"
+LOG_DEFAULT_CONSOLE_LEVEL = "DEBUG"
+LOG_DEFAULT_FORMAT = "%(asctime)s-%(levelname)s:%(message)s"
+LOG_DEFAULT_DATE_FORMAT = DATE_DEFAULT_FORMAT
+LOG_DEFAULT_PATH = "../data/puncher.log"
+LOG_DEFAULT_ROTATE_TIME = "midnight"
+LOG_DEFAULT_ROTATE_INTERVAL = 1
+LOG_DEFAULT_ROTATE_BACKUP_COUNT = 7
+LOG_DEFAULT_ROTATE_AT_TIME = datetime.time(0, 0, 0, 0)
